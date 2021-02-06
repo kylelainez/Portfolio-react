@@ -1,12 +1,15 @@
 :root{
-    --color-1: #11111F;
-    --color-2: #A2FAA3;
-    --color-3: #0C8900;
-    --color-4: #92C9B1;
-    --color-5: #4F759B;
+    --color-1: #0a192f;
+    --color-2: #64ffda;
+    --color-3: rgb(245,245,245);
+    --content-width: 1000px;
+    font-size: 16px;
 }
 html, body{
     margin: 0;
     padding: 0;
     background-color: var(--color-1);
+}
+.content{
+    padding: 0 150px;
 }

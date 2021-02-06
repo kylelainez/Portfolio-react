@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <LandingMessage />
-      <About />
+      <div className="content">
+        <LandingMessage />
+        <About />
+      </div>
     </div>
   );
 }

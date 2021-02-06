@@ -5,7 +5,7 @@ function navbar(){
     return (
         <header>
             <nav>
-                <div class="icon">
+                <div className="icon">
                     KL
                 </div>
                 <div className="links">
