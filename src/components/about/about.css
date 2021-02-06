@@ -1,0 +1,13 @@
+.about{
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about h1{
+    color: var(--color-3);
+}
+
+.aboutMe{
+    color: var(--color-3)
+}
