@@ -3,4 +3,24 @@
     width: 100%;
     margin: 0 auto;
     color: var(--color-3);
+    display: flex;
+    justify-content: space-between;
+}
+.skills div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center
+}
+
+.skills div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.skills div ul li{
+    list-style-type: none;
 }
