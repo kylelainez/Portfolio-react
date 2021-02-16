@@ -4,6 +4,7 @@
     --color-3: rgb(245,245,245);
     --content-width: 1000px;
     font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 html, body{
     margin: 0;
