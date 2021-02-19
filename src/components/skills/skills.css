@@ -4,23 +4,21 @@
     margin: 0 auto;
     color: var(--color-3);
     display: flex;
-    justify-content: space-between;
-}
-.skills div{
-    display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center
 }
 
-.skills div ul{
+.skills ul{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     padding: 0;
+    margin: 0;
+    height: 80px;
+    width: auto;
 }
 
-.skills div ul li{
+.skills ul li{
     list-style-type: none;
+    line-height: 1.5rem;
 }
