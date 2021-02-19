@@ -24,12 +24,14 @@ nav a{
 }
 #resume{
     border: 1px solid var(--color-2);
+    background-color: var(--color-2);
     border-radius: 5px;
-    padding: 8px
+    padding: 8px;
+    color: var(--color-1);
 }
 #resume:hover{
-    background-color: var(--color-2);
-    color: var(--color-1);  
+    background-color: var(--color-1);
+    color: var(--color-2);  
 }
 nav a:hover{
     color: var(--color-2);
