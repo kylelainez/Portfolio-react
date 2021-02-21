@@ -1,0 +1,19 @@
+.projects{
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    color: var(--color-3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-list{
+    width: 450px;
+    height: 300px;
+}
+
+.project-list img{
+    width: inherit;
+    position: absolute;
+}
