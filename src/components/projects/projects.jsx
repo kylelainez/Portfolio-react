@@ -53,6 +53,7 @@ function projects(){
                     <li>Node.js</li>
                     <li>Express</li>
                     <li>MongoDB</li>
+                    <li>JWT</li>
                     <li>AWS S3</li>
                 </ul>
             </div>
@@ -60,7 +61,103 @@ function projects(){
         <div className="more-projects-container">
             <span>More Projects</span>
             <div className="more-projects">
-                test
+                {/* HTML PROJECTS */}
+                <div>
+                    <h2>HTML</h2>
+                    <div>
+                        <div>
+                            <span className="project-title">Expense Tracker</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A simple website that can be used to track your expenses. This uses the Cloud Firestore of Firebase as database.
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">Sorting Algorithms Visualization</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A visualizer inspired from Clement Mihailescu's project.
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">Portfolio V1</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            My personal website.
+                        </span>
+                    </div>
+                </div>
+                {/* C++ PROJECTS */}
+                <div>
+                    <h2>C++</h2>
+                    <div>
+                        <div>
+                            <span className="project-title">Address Book</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A simple CRUD application that uses a .txt file as database.
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">Concert Reservation System</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A console application for seat reservation on a concert.
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">Line Following Robot (Arduino)</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">Sumobot (Arduino)</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                    </div>
+                </div>
+                {/* Java PROJECTS */}
+                <div>
+                    <h2>Java</h2>
+                    <div>
+                        <div>
+                            <span className="project-title">Spot-It (Android)</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A service/commodity location finder where you can look for restaurants, convenience stores, computer shops, laundry shop and other services within 1km of PUP College of Engineering and Architecture.
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">FlowFive App (Android)</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A android app made for our thesis for controlling our system.
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <span className="project-title">Queueing System</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                            A queueing system made for a small clinic in manila. It composes of 2 applications. 1 for the Reception and 1 for the Doctors.
+                        </span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
