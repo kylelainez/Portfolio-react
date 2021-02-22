@@ -57,6 +57,12 @@ function projects(){
                 </ul>
             </div>
         </div>
+        <div className="more-projects-container">
+            <span>More Projects</span>
+            <div className="more-projects">
+                test
+            </div>
+        </div>
     </div>
 }
 
