@@ -59,7 +59,7 @@ function projects(){
             </div>
         </div>
         <div className="more-projects-container">
-            <span>More Projects</span>
+            <span id="more-project-button">More Projects</span>
             <div className="more-projects">
                 {/* HTML PROJECTS */}
                 <div>
