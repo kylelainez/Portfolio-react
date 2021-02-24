@@ -67,7 +67,7 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Expense Tracker</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://wizyexpensetracker.firebaseapp.com/" className="website" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A simple website that can be used to track your expenses. This uses the Cloud Firestore of Firebase as database.
@@ -76,7 +76,8 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Sorting Algorithms Visualization</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/SortingAlgorithms" className="github" target="_blank"></a>
+                            <a href="https://kylelainez.github.io/SortingAlgorithms/" className="website" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A visualizer inspired from Clement Mihailescu's project.
@@ -85,7 +86,7 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Portfolio V1</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/Portfolio" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             My personal website.
@@ -98,7 +99,7 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Address Book</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/Address-Book" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A simple CRUD application that uses a .txt file as database.
@@ -107,7 +108,7 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Concert Reservation System</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/Concert-Reservation-System" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A console application for seat reservation on a concert.
@@ -116,13 +117,13 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Line Following Robot (Arduino)</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/Line-Follower" className="github" target="_blank"></a>
                         </div>
                     </div>
                     <div>
                         <div>
                             <span className="project-title">Sumobot (Arduino)</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/Sumobot-Arduino" className="github" target="_blank"></a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +133,7 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Spot-It (Android)</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/OOP-Project-Android" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A service/commodity location finder where you can look for restaurants, convenience stores, computer shops, laundry shop and other services within 1km of PUP College of Engineering and Architecture.
@@ -141,7 +142,7 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">FlowFive App (Android)</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/darielkurt/ThesisApp" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A android app made for our thesis for controlling our system.
@@ -150,20 +151,20 @@ function projects(){
                     <div>
                         <div>
                             <span className="project-title">Queueing System</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/giamarielle/sadproject" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                             A queueing system made for a small clinic in manila. It composes of 2 applications. 1 for the Reception and 1 for the Doctors.
                         </span>
                     </div>
                 </div>
-                {/* Java PROJECTS */}
+                {/* Python PROJECTS */}
                 <div>
                     <h2>Python</h2>
                     <div>
                         <div>
                             <span className="project-title">FlowFive (Raspberry Pi)</span>
-                            <a href="#" className="github"></a>
+                            <a href="https://github.com/kylelainez/Thesis-RasPi" className="github" target="_blank"></a>
                         </div>
                         <span className="project-description"> 
                         A program for controlling the hardware on our system for our thesis, Automated Honey Harvester.
