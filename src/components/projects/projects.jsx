@@ -157,7 +157,19 @@ function projects(){
                         </span>
                     </div>
                 </div>
-
+                {/* Java PROJECTS */}
+                <div>
+                    <h2>Python</h2>
+                    <div>
+                        <div>
+                            <span className="project-title">FlowFive (Raspberry Pi)</span>
+                            <a href="#" className="github"></a>
+                        </div>
+                        <span className="project-description"> 
+                        A program for controlling the hardware on our system for our thesis, Automated Honey Harvester.
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
