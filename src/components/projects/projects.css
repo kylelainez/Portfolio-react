@@ -22,6 +22,8 @@
     padding: 15px 30px;
     font-size: 1.5rem;
     background-color: var(--color-2);
+    border: 1px solid var(--color-2);
+    transition: ease-in-out, 300ms;
     color: var(--color-1);
     border-radius: 30px;
 }
@@ -29,7 +31,6 @@
 #more-project-button:hover{
     cursor: pointer;
     background-color: var(--color-1);
-    border: 1px solid var(--color-2);
     color: var(--color-2);
 }
 
@@ -78,4 +79,47 @@
 .more-projects div{
     display: flex;
     flex-direction: column;
+}
+
+.more-projects div h2{
+    color: var(--color-2);
+}
+
+.more-projects div div{
+    padding-bottom: 30px;
+}
+
+.more-projects div div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+.github svg, .website svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    fill: var(--color-2);
+    background-color: var(--color-1);
+    border-radius: 50%;
+    padding: 2px;
+    transition: ease-in-out, 500ms;
+    margin: 0 2px;
+}
+
+.github svg:hover, .website svg:hover{
+    fill: var(--color-1);
+    background-color: var(--color-2);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.project-title{
+    font-size: 1.3rem;
+}
+
+.project-description{
+    color: rgba(245,245,245, 0.7)
 }
