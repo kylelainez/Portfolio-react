@@ -124,3 +124,7 @@
 .project-description{
     color: rgba(245,245,245, 0.7)
 }
+
+.ReactCollapse--collapse {
+    transition: height 500ms;
+  }

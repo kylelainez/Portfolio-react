@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import { Accordion } from 'semantic-ui-react';
+import { Collapse } from 'react-collapse';
 import './projects.css';
 import Chess from '../../Images/Chess.png';
 import BuyAndSale from '../../Images/BuyAndSale.png';
@@ -209,14 +208,9 @@ function Projects(){
         </div>
         <div className="more-projects-container">
             <span id="more-project-button" onClick={handleClick}>More Projects</span>
-            <Accordion>
-                <Accordion.Title active={state}>
-                    {''}
-                </Accordion.Title>
-                <Accordion.Content active={state}>
-                    <MoreProjects />
-                </Accordion.Content>
-            </Accordion>
+            <Collapse isOpened={state}>
+                <MoreProjects />
+            </Collapse>
         </div>
     </div>
 }
