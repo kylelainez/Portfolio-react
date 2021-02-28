@@ -1,5 +1,4 @@
-.container{
+.myContainer{
     max-width: var(--content-width);
-    padding: 0 150px;
     margin: 0 auto;
 }

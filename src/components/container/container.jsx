@@ -6,7 +6,7 @@ import Skills from '../../components/skills/skills';
 import Projects from '../../components/projects/projects';
 
 function container(){
-    return <div className="container">
+    return <div className="myContainer">
         <LandingMessage />
         <About />
         <Skills />
