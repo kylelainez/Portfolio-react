@@ -4,6 +4,7 @@ import LandingMessage from '../../components/landingMessage/landingMessage';
 import About from '../../components/about/about';
 import Skills from '../../components/skills/skills';
 import Projects from '../../components/projects/projects';
+import Contact from '../../components/contact/contact';
 
 function container(){
     return <div className="myContainer">
@@ -11,6 +12,7 @@ function container(){
         <About />
         <Skills />
         <Projects />
+        <Contact />
     </div>;
 }
 
