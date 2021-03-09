@@ -1,12 +1,13 @@
 .contact{
-    color: var(--color-3);
-}
-
-.contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--color-3);
+}
+
+.contact h1{
+    margin-bottom: 0;
 }
 
 .contact p{

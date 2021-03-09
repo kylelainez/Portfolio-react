@@ -26,16 +26,17 @@
     padding: 30px 0;
 }
 .landingMessage div a {
-    color: var(--color-2);
+    color: var(--color-1);
     text-decoration: none;
     font-size: 1.5rem;
     padding: 20px;
     border: 1px solid var(--color-2);
+    background-color: var(--color-2);
     border-radius: 5px;
     transition: 300ms;
 }
 
 .landingMessage div a:hover{
-    background-color: var(--color-2);
-    color: var(--color-1);
+    background-color: var(--color-1);
+    color: var(--color-2);
 }
