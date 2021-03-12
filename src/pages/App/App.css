@@ -16,3 +16,12 @@ h1{
     color: var(--color-2);
     align-self: center;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--color-2);
+    border-left: 1px solid gray;
+}
