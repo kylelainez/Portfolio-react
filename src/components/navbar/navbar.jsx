@@ -10,7 +10,6 @@ function navbar(){
                 </div>
                 <div className="links">
                     <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                     <a href="/resume" target="_blank" id="resume">Resume</a>
