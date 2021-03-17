@@ -161,7 +161,7 @@ function Projects(){
         <h1>Projects</h1> 
         <div>
             <div className="project-list">
-                <img src={Chess} />
+                <img src={Chess} alt="chess"/>
                 <ul className="technologies">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -169,7 +169,7 @@ function Projects(){
                 </ul>
             </div>
             <div className="project-list">
-                <img src={BuyAndSale} />
+                <img src={BuyAndSale} alt="buy and sale"/>
                 <ul className="technologies">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -181,7 +181,7 @@ function Projects(){
                 </ul>
             </div>
             <div className="project-list">
-                <img src={GoalTracker} />
+                <img src={GoalTracker} alt="Goal Tracker"/>
                 <ul className="technologies">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -193,7 +193,7 @@ function Projects(){
                 </ul>
             </div>
             <div className="project-list">
-                <img src={Convey} />
+                <img src={Convey} alt="convey"/>
                 <ul className="technologies">
                     <li>HTML</li>
                     <li>CSS</li>
