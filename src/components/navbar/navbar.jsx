@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import Resume from '../../files/Kyle Lainez - Resume.pdf';
 
 function navbar(){
     return (
@@ -12,7 +13,7 @@ function navbar(){
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
-                    <a href="/resume" target="_blank" id="resume">Resume</a>
+                    <a href={Resume} target="_blank" id="resume">Resume</a>
                 </div>
             </nav>
         </header>

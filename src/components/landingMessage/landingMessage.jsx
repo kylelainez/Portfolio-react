@@ -1,5 +1,6 @@
 import React from 'react';
 import './landingMessage.css'
+import Resume from '../../files/Kyle Lainez - Resume.pdf';
 
 function landingMessage(){
     return <div className="landingMessage" id="landingMessage">
@@ -7,7 +8,7 @@ function landingMessage(){
         <span className="big-heading">Kyle Adrian Lainez.</span>
         <span className="big-heading">I'm a Software Engineer.</span>
         <div>
-            <a href="/resume" target="_blank">View my Resume</a>
+            <a href={Resume} target="_blank">View my Resume</a>
         </div>
        
     </div>
