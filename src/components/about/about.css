@@ -8,5 +8,16 @@
 }
 
 .aboutMe{
-    color: var(--color-3)
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutMe p{
+    color: var(--color-3);
+    width: 70%;
+}
+
+.aboutMe img{
+    height: 400px;
 }
