@@ -5,11 +5,11 @@ import Skills from '../../components/skills/skills';
 
 function about(){
     return <div className="about" id="about">
-        <h1> About Me.</h1>
+        <h1> About Me</h1>
         <div className="aboutMe">
-            <div>
+            <div className="text">
                 <p>
-                    Helo! I'm Kyle, a recent graduate of Software Engineering Immersive program at General Assembly.
+                    Hello! I'm Kyle, a Software Engineer in Los Angeles, CA.
                     I enjoy programming a lot and creating things for the computer.
                     My goal is to create programs that can facilitate people's needs.
                 </p>
