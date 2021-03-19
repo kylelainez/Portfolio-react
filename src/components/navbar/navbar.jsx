@@ -3,18 +3,28 @@ import './navbar.css';
 import Resume from '../../files/Kyle Lainez - Resume.pdf';
 
 function navbar(){
+    function scroll(scrollId){
+       const element = document.querySelector(scrollId);
+
+       window.scrollTo({
+           top: element.offsetTop,
+           left: 0,
+           behavior: 'smooth'
+       });
+    }
+
     return (
         <header>
             <nav>
                 <div className="icon">
                     KL
                 </div>
-                <div className="links">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                    <a href={Resume} target="_blank" id="resume">Resume</a>
-                </div>
+                <ul className="links">
+                    <li onClick={() => scroll('#about')}>About</li>
+                    <li onClick={() => scroll('#projects')}>Projects</li>
+                    <li onClick={() => scroll('#contact')}>Contact</li>
+                    <li><a href={Resume} target="_blank" id="resume">Resume</a></li>
+                </ul>
             </nav>
         </header>
        

@@ -15,12 +15,13 @@ nav{
     padding: 0 40px;
     height: 100%;
 }
-nav a{
+nav li{
     color: var(--color-3);
     text-decoration: none;
     margin-left: 20px;
     font-size: 1.2rem;
     transition: 300ms;
+    cursor: pointer;
 }
 #resume{
     border: 1px solid var(--color-2);
@@ -28,14 +29,21 @@ nav a{
     border-radius: 5px;
     padding: 8px;
     color: var(--color-1);
+    text-decoration: none;
+    transition: 300ms
 }
 #resume:hover{
     background-color: var(--color-1);
     color: var(--color-2);  
 }
-nav a:hover{
+nav li:hover{
     color: var(--color-2);
 }
 .icon{
     color: var(--color-3);
+}
+.links{
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
