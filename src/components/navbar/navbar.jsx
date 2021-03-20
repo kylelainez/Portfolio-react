@@ -23,7 +23,7 @@ function navbar(){
                     <li onClick={() => scroll('#about')}>About</li>
                     <li onClick={() => scroll('#projects')}>Projects</li>
                     <li onClick={() => scroll('#contact')}>Contact</li>
-                    <li><a href={Resume} target="_blank" id="resume">Resume</a></li>
+                    <li><a href={Resume} target="_blank" id="resume" rel="noreferrer">Resume</a></li>
                 </ul>
             </nav>
         </header>

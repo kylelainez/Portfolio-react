@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse } from 'react-collapse';
+import Modal from 'react-modal';
 import './projects.css';
 import Chess from '../../Images/Chess.png';
 import BuyAndSale from '../../Images/BuyAndSale.png';
@@ -149,15 +150,44 @@ function MoreProjects(){
         
 }
 
+function ProjectModal(props){
+
+}
+
 function Projects(){
-    const [state, setState] = useState(false);
+    const [state, setState] = useState({
+        moreProjects: false,
+        modalProject: false
+    });
 
     const handleClick = (e) => {
         e.preventDefault();
-        state ? setState(false) : setState(true);
+        state.moreProjects ? setState({moreProjects: false, ...state}) : setState({moreProjects: true, ...state});
+    }
+
+    const openModal = () => {
+        setState({
+            modalProject: true,
+            ...state
+        })
+    }
+
+    const closeModal = () => {
+        setState({
+            modalProject: false,
+            ...state
+        })
     }
 
     return <div className="projects" id="projects">
+
+        <Modal
+            isOpen={state.modalProject}
+            onRequestClose={closeModal}
+        >
+
+        </Modal>
+
         <h1>Projects</h1> 
         <div>
             <div className="project-list">
@@ -210,7 +240,7 @@ function Projects(){
         </div>
         <div className="more-projects-container">
             <span id="more-project-button" onClick={handleClick}>More Projects</span>
-            <Collapse isOpened={state}>
+            <Collapse isOpened={state.moreProjects}>
                 <MoreProjects />
             </Collapse>
         </div>
