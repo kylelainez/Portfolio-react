@@ -155,42 +155,36 @@ function ProjectModal(props){
 }
 
 function Projects(){
-    const [state, setState] = useState({
-        moreProjects: false,
-        modalProject: false
-    });
+    const [moreProjects, setMore] = useState(false);
+    const [modalProject, setModal] = useState(false);
 
     const handleClick = (e) => {
         e.preventDefault();
-        state.moreProjects ? setState({moreProjects: false, ...state}) : setState({moreProjects: true, ...state});
+        moreProjects ? setMore(false) : setMore(true);
     }
 
     const openModal = () => {
-        setState({
-            modalProject: true,
-            ...state
-        })
+        setModal(true)
     }
 
     const closeModal = () => {
-        setState({
-            modalProject: false,
-            ...state
-        })
+        setModal(false)
     }
 
     return <div className="projects" id="projects">
 
         <Modal
-            isOpen={state.modalProject}
+            isOpen={modalProject}
             onRequestClose={closeModal}
         >
-
+            <div>
+                <h2> MODAL HERE</h2>
+                <button onClick={closeModal}>X</button>
+            </div>
         </Modal>
-
         <h1>Projects</h1> 
         <div>
-            <div className="project-list">
+            <div className="project-list" onClick={openModal}>
                 <img src={Chess} alt="chess"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -198,7 +192,7 @@ function Projects(){
                     <li>JavaScript</li>
                 </ul>
             </div>
-            <div className="project-list">
+            <div className="project-list" onClick={openModal}>
                 <img src={BuyAndSale} alt="buy and sale"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -210,7 +204,7 @@ function Projects(){
                     <li>MongoDB</li>
                 </ul>
             </div>
-            <div className="project-list">
+            <div className="project-list" onClick={openModal}> 
                 <img src={GoalTracker} alt="Goal Tracker"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -222,7 +216,7 @@ function Projects(){
                     <li>Bootstrap</li>
                 </ul>
             </div>
-            <div className="project-list">
+            <div className="project-list" onClick={openModal}>
                 <img src={Convey} alt="convey"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -240,7 +234,7 @@ function Projects(){
         </div>
         <div className="more-projects-container">
             <span id="more-project-button" onClick={handleClick}>More Projects</span>
-            <Collapse isOpened={state.moreProjects}>
+            <Collapse isOpened={moreProjects}>
                 <MoreProjects />
             </Collapse>
         </div>
