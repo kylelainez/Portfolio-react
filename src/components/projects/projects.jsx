@@ -6,7 +6,7 @@ import Chess from '../../Images/Chess.png';
 import BuyAndSale from '../../Images/BuyAndSale.png';
 import GoalTracker from '../../Images/GoalTracker.png';
 import Convey from '../../Images/Convey.png';
-
+Modal.defaultStyles.overlay.backgroundColor = 'none';
 function MoreProjects(){
     return  <div className="more-projects">
             {/* HTML PROJECTS */}
@@ -150,20 +150,43 @@ function MoreProjects(){
         
 }
 
-function ProjectModal(props){
-
+function ProjectModal(){
+    const projectInfo = {
+        chess: {
+            title: 'Chess',
+            technologies: ['HTML', 'CSS', 'JavaScript'],
+            description: ''
+        },
+        buyAndSale: {
+            title: 'Buy and Sale',
+            technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'Passport.js', 'MongoDB'],
+            description: ''
+        },
+        goalTracker:{
+            title: 'Goal Tracker',
+            technologies: ['HTML', 'CSS', 'Python', 'Django', 'PostgreSQL', 'AWS S3', 'Bootstrap'],
+            description: ''
+        },
+        convey:{
+            title: 'Convey',
+            technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'React', 'MongoDB', 'Socket.io', 'AWS S3', 'JWT'],
+            description: ''
+        }
+    }
 }
 
 function Projects(){
     const [moreProjects, setMore] = useState(false);
     const [modalProject, setModal] = useState(false);
+    const [selected, setSelected] = useState('');
 
     const handleClick = (e) => {
         e.preventDefault();
         moreProjects ? setMore(false) : setMore(true);
     }
 
-    const openModal = () => {
+    const openModal = (selectedProject) => {
+        setSelected(selectedProject);
         setModal(true)
     }
 
@@ -177,14 +200,11 @@ function Projects(){
             isOpen={modalProject}
             onRequestClose={closeModal}
         >
-            <div>
-                <h2> MODAL HERE</h2>
-                <button onClick={closeModal}>X</button>
-            </div>
+            <ProjectModal />
         </Modal>
         <h1>Projects</h1> 
         <div>
-            <div className="project-list" onClick={openModal}>
+            <div className="project-list" onClick={() => openModal('chess')}>
                 <img src={Chess} alt="chess"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -192,7 +212,7 @@ function Projects(){
                     <li>JavaScript</li>
                 </ul>
             </div>
-            <div className="project-list" onClick={openModal}>
+            <div className="project-list" onClick={() => openModal('buyAndSale')}>
                 <img src={BuyAndSale} alt="buy and sale"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -204,7 +224,7 @@ function Projects(){
                     <li>MongoDB</li>
                 </ul>
             </div>
-            <div className="project-list" onClick={openModal}> 
+            <div className="project-list" onClick={() => openModal('goalTracker')}> 
                 <img src={GoalTracker} alt="Goal Tracker"/>
                 <ul className="technologies">
                     <li>HTML</li>
@@ -216,7 +236,7 @@ function Projects(){
                     <li>Bootstrap</li>
                 </ul>
             </div>
-            <div className="project-list" onClick={openModal}>
+            <div className="project-list" onClick={() => openModal('convey')}>
                 <img src={Convey} alt="convey"/>
                 <ul className="technologies">
                     <li>HTML</li>
