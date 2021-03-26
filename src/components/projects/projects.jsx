@@ -155,22 +155,22 @@ function ProjectModal(){
         chess: {
             title: 'Chess',
             technologies: ['HTML', 'CSS', 'JavaScript'],
-            description: ''
+            description: 'Chess is a two-player strategy board game played on a checkered board with 64 squares arranged in an 8×8 square grid.'
         },
         buyAndSale: {
             title: 'Buy and Sale',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'Passport.js', 'MongoDB'],
-            description: ''
+            description: 'Buy and Sale is a full CRUD, e-commerce website built with MEN stack.'
         },
         goalTracker:{
             title: 'Goal Tracker',
             technologies: ['HTML', 'CSS', 'Python', 'Django', 'PostgreSQL', 'AWS S3', 'Bootstrap'],
-            description: ''
+            description: 'Goal Tracker is an app that helps users manage, create, and stick to their goals and resolutions. Users can create their own lists (e.g. Bucket List, Fitness Goals, New Year\'s Resolutions), then organize goals amonst those lists. The New Year is the inspiration for this goals and resolutions app.'
         },
         convey:{
             title: 'Convey',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'React', 'MongoDB', 'Socket.io', 'AWS S3', 'JWT'],
-            description: ''
+            description: 'Convey messaging app allows you to communicate with your friends no matter how far you are apart. Convey is a simple real-time messaging app that is made with MERN stack.'
         }
     }
 }
