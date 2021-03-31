@@ -150,36 +150,36 @@ function MoreProjects(){
         
 }
 
-function ProjectModal(){
+function Projects(){
+    const [moreProjects, setMore] = useState(false);
+    const [modalProject, setModal] = useState(false);
+    const [selected, setSelected] = useState('chess');
     const projectInfo = {
         chess: {
             title: 'Chess',
             technologies: ['HTML', 'CSS', 'JavaScript'],
-            description: 'Chess is a two-player strategy board game played on a checkered board with 64 squares arranged in an 8×8 square grid.'
+            description: 'Chess is a two-player strategy board game played on a checkered board with 64 squares arranged in an 8×8 square grid.',
+            image: Chess
         },
         buyAndSale: {
             title: 'Buy and Sale',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'Passport.js', 'MongoDB'],
-            description: 'Buy and Sale is a full CRUD, e-commerce website built with MEN stack.'
+            description: 'Buy and Sale is a full CRUD, e-commerce website built with MEN stack.',
+            image: BuyAndSale
         },
         goalTracker:{
             title: 'Goal Tracker',
             technologies: ['HTML', 'CSS', 'Python', 'Django', 'PostgreSQL', 'AWS S3', 'Bootstrap'],
-            description: 'Goal Tracker is an app that helps users manage, create, and stick to their goals and resolutions. Users can create their own lists (e.g. Bucket List, Fitness Goals, New Year\'s Resolutions), then organize goals amonst those lists. The New Year is the inspiration for this goals and resolutions app.'
+            description: 'Goal Tracker is an app that helps users manage, create, and stick to their goals and resolutions. Users can create their own lists (e.g. Bucket List, Fitness Goals, New Year\'s Resolutions), then organize goals amonst those lists. The New Year is the inspiration for this goals and resolutions app.',
+            image: GoalTracker
         },
-        convey:{
+        convey: {
             title: 'Convey',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'React', 'MongoDB', 'Socket.io', 'AWS S3', 'JWT'],
-            description: 'Convey messaging app allows you to communicate with your friends no matter how far you are apart. Convey is a simple real-time messaging app that is made with MERN stack.'
+            description: 'Convey messaging app allows you to communicate with your friends no matter how far you are apart. Convey is a simple real-time messaging app that is made with MERN stack.',
+            image: Convey
         }
     }
-}
-
-function Projects(){
-    const [moreProjects, setMore] = useState(false);
-    const [modalProject, setModal] = useState(false);
-    const [selected, setSelected] = useState('');
-
     const handleClick = (e) => {
         e.preventDefault();
         moreProjects ? setMore(false) : setMore(true);
@@ -199,8 +199,14 @@ function Projects(){
         <Modal
             isOpen={modalProject}
             onRequestClose={closeModal}
+            appElement={document.querySelector('body')}
+            className="projectModal"
         >
-            <ProjectModal />
+            <div className="modalChild">
+                <button onClick={closeModal}>X</button>
+                <h1>{projectInfo[selected].title}</h1>
+                <img src={projectInfo[selected].image}/>
+            </div>
         </Modal>
         <h1>Projects</h1> 
         <div>
