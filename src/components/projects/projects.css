@@ -42,6 +42,7 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    cursor: pointer;
 }
 
 .project-list:hover img{
@@ -146,8 +147,20 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
+    color: var(--color-3);
     width: 80%;
     height: 80%;
+    overflow-y: auto;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.modalChild div{
+    display: flex;
+}
+
+.modalChild div svg{
+    height: 30px;
 }
 
 .modalChild button{
@@ -162,5 +175,9 @@
 }
 
 .modalChild img{
-    /* width: */
+    width: 80%;
+}
+
+.modalChild p{
+    width: 80%;
 }
