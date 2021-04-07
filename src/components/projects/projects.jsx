@@ -6,7 +6,8 @@ import Chess from '../../Images/Chess.png';
 import BuyAndSale from '../../Images/BuyAndSale.png';
 import GoalTracker from '../../Images/GoalTracker.png';
 import Convey from '../../Images/Convey.png';
-import { cleanup } from '@testing-library/react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 Modal.defaultStyles.overlay.backgroundColor = 'none';
 
 
@@ -217,7 +218,7 @@ function Projects(){
     }
     useEffect(() => {
         window.addEventListener('scroll', checkScroll)
-
+        Aos.init({duration: 2000});
         return function cleanup(){
             window.removeEventListener('scroll', checkScroll);
         }
@@ -253,7 +254,7 @@ function Projects(){
             </div>
         </Modal>
         <h1>Projects</h1> 
-        <div>
+        <div data-aos="slide-left" data-aos-once>
             <div className="project-list" onClick={() => openModal('chess')} ref={testRef}>
                 <img src={Chess} alt="chess"/>
                 <ul className="technologies">
