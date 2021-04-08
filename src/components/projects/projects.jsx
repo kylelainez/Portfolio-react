@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Collapse } from 'react-collapse';
 import Modal from 'react-modal';
 import './projects.css';
@@ -159,8 +159,6 @@ function Projects(){
     const [modalProject, setModal] = useState(false);
     const [selected, setSelected] = useState('chess');
 
-    const testRef = useRef();
-
     const projectInfo = {
         chess: {
             title: 'Chess',
@@ -209,19 +207,8 @@ function Projects(){
         setModal(false)
     }
     
-    function checkScroll(){
-        console.log(window.scrollY ,testRef.current.offsetTop)
-        if(window.scrollY >= testRef.current.offsetTop){
-            console.log("EQUALITY")
-            testRef.current.classList.add('animate');
-        }
-    }
     useEffect(() => {
-        window.addEventListener('scroll', checkScroll)
         Aos.init({duration: 2000});
-        return function cleanup(){
-            window.removeEventListener('scroll', checkScroll);
-        }
     }, []);
 
     return <div className="projects" id="projects">
@@ -254,7 +241,7 @@ function Projects(){
             </div>
         </Modal>
         <h1>Projects</h1> 
-        <div data-aos="slide-left" data-aos-once>
+        <div data-aos="fade" data-aos-once>
             <div className="project-list" onClick={() => openModal('chess')} ref={testRef}>
                 <img src={Chess} alt="chess"/>
                 <ul className="technologies">
