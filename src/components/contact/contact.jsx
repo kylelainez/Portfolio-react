@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contact.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact(){
-    return <div className="contact" id="contact">
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+
+    return <div className="contact" id="contact" data-aos="zoom-in-down" data-aos-once>
         <h1>Contact Me</h1>
         <p>Interested in working together?</p>
         <a href="mailto:kyleadrianlainez@gmail.com" className="message" target="_blank" rel="noreferrer">Send a message!</a>

@@ -6,7 +6,7 @@ import Projects from '../../components/projects/projects';
 import Contact from '../../components/contact/contact';
 import Footer from '../../components/footer/footer';
 
-function container(){
+function Container(){
     return <div className="myContainer">
         <LandingMessage />
         <About />
@@ -16,4 +16,4 @@ function container(){
     </div>;
 }
 
-export default container;
+export default Container;

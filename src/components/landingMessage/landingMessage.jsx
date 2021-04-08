@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './landingMessage.css'
 import Resume from '../../files/Kyle Lainez - Resume.pdf';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-function landingMessage(){
+function LandingMessage(){
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+    
     return <div className="landingMessage" id="landingMessage">
-        <span className="small-heading">Hi, my name is</span>
-        <span className="big-heading">Kyle Adrian Lainez.</span>
-        <span className="big-heading">I'm a Software Engineer.</span>
+        <span className="small-heading" data-aos="fade" data-aos-once data-aos-delay="50" >Hi, my name is</span>
+        <span className="big-heading" data-aos="fade" data-aos-once data-aos-delay="1500" >Kyle Adrian Lainez.</span>
+        <span className="big-heading" data-aos="fade" data-aos-once data-aos-delay="3000" >I'm a Software Engineer.</span>
         <div>
             <a href={Resume} target="_blank" rel="noreferrer">View my Resume</a>
         </div>
@@ -14,4 +21,4 @@ function landingMessage(){
     </div>
 }
 
-export default landingMessage;
+export default LandingMessage;

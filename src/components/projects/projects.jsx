@@ -242,7 +242,7 @@ function Projects(){
         </Modal>
         <h1>Projects</h1> 
         <div data-aos="fade" data-aos-once>
-            <div className="project-list" onClick={() => openModal('chess')} ref={testRef}>
+            <div className="project-list" onClick={() => openModal('chess')}>
                 <img src={Chess} alt="chess"/>
                 <ul className="technologies">
                     <li>HTML</li>
