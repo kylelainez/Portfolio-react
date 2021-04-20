@@ -12,9 +12,9 @@ function LandingMessage(){
     
     return <div className="landingMessage" id="landingMessage">
         <span className="small-heading" data-aos="fade" data-aos-once data-aos-delay="50" >Hi, my name is</span>
-        <span className="big-heading" data-aos="fade" data-aos-once data-aos-delay="1500" >Kyle Adrian Lainez.</span>
-        <span className="big-heading" data-aos="fade" data-aos-once data-aos-delay="3000" >I'm a Software Engineer.</span>
-        <div>
+        <span className="big-heading" data-aos="fade" data-aos-once data-aos-delay="1000" >Kyle Adrian Lainez.</span>
+        <span className="big-heading" data-aos="fade" data-aos-once data-aos-delay="2000" >I'm a Software Engineer.</span>
+        <div data-aos="fade" data-aos-once data-aos-delay="3000">
             <a href={Resume} target="_blank" rel="noreferrer">View my Resume</a>
         </div>
        
