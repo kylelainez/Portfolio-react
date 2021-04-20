@@ -6,6 +6,7 @@
     font-size: 16px;
     font-family: 'Noto Sans JP', sans-serif;
     overflow-x: hidden;
+    transition: 300ms;
 }
 html, body{
     margin: 0;
@@ -26,4 +27,34 @@ h1{
     border-radius: 10px;
     background-color: var(--color-2);
     border-left: 1px solid gray;
+}
+
+@media screen and (max-width: 1366px) {
+    :root{
+        --content-width: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    :root{
+        --content-width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root{
+        --content-width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :root{
+        --content-width: 400px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    :root{
+        --content-width: 300px;
+    }
 }
