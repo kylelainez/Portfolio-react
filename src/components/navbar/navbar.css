@@ -47,3 +47,83 @@ nav li:hover{
     align-items: center;
     list-style: none;
 }
+
+.navButton{
+    display: none;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.burger{
+    height: 4px;
+    width: 40px;
+    background-color: var(--color-2);
+    border-radius: 5px;
+}
+.burger::before,
+.burger::after{
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color: var(--color-2);
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+    position: absolute;
+}
+
+.burger::before{
+    transform: translateY(-14px);
+}
+
+.burger::after{
+    transform: translateY(14px);
+}
+
+@media screen and (max-width: 1366px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: -50vw;
+        bottom: 0;
+        height: 100vh;
+        margin: 0;
+        padding: 100px 0;
+        width: 50vw;
+        background-color: #0f2647;
+    }
+
+    nav ul.active{
+        right: 0;
+    }
+
+    nav ul li{
+        margin-bottom: 1.5rem;
+    }
+
+    .navButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 411px) {
+
+}

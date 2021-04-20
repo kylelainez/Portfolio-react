@@ -13,6 +13,7 @@ html, body{
     padding: 0;
     background-color: var(--color-1) !important;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1{

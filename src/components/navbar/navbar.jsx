@@ -13,6 +13,13 @@ function navbar(){
        });
     }
 
+    function toggleBurger(e) {
+        e.preventDefault();
+        e.target.classList.toggle('active');
+
+        document.querySelector('nav ul').classList.toggle('active');
+    }
+
     return (
         <header>
             <nav>
@@ -26,6 +33,9 @@ function navbar(){
                     <li><a href={Resume} target="_blank" id="resume" rel="noreferrer">Resume</a></li>
                 </ul>
             </nav>
+            <div className='navButton'>
+                <div className="burger" onClick={toggleBurger}></div>
+            </div>
         </header>
        
     )
