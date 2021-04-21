@@ -5,7 +5,7 @@ import Resume from '../../files/Kyle Lainez - Resume.pdf';
 function navbar(){
     function scroll(scrollId){
        const element = document.querySelector(scrollId);
-
+       if(window.innerWidth <= 768) toggleBurger();
        window.scrollTo({
            top: element.offsetTop,
            left: 0,
@@ -13,10 +13,8 @@ function navbar(){
        });
     }
 
-    function toggleBurger(e) {
-        e.preventDefault();
-        e.target.classList.toggle('active');
-
+    function toggleBurger() {
+        document.querySelector('.burger').classList.toggle('active');
         document.querySelector('nav ul').classList.toggle('active');
     }
 

@@ -82,27 +82,22 @@ nav li:hover{
     transform: translateY(14px);
 }
 
-@media screen and (max-width: 1366px) {
-
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
 @media screen and (max-width: 768px) {
     nav ul{
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 0;
-        right: -50vw;
+        right: -75vw;
         bottom: 0;
         height: 100vh;
         margin: 0;
-        padding: 100px 0;
-        width: 50vw;
+        padding: 0;
+        width: 75vw;
         background-color: #0f2647;
+        transition: 300ms;
+        justify-content: center;
+        align-items: center;
     }
 
     nav ul.active{
@@ -110,13 +105,26 @@ nav li:hover{
     }
 
     nav ul li{
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
+        letter-spacing: 3px;
     }
 
     .navButton{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .burger.active::before{
+        transform: rotate(-45deg);
+    }
+
+    .burger.active::after{
+        transform: rotate(45deg);
+    }
+
+    .burger.active {
+        background-color: transparent;
     }
 }
 
