@@ -26,3 +26,24 @@
 .aboutMe img{
     height: 400px;
 }
+
+@media screen and (max-width: 576px) {
+    .aboutMe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .text {
+        width: 100%;
+    }
+    .aboutMe img{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .aboutMe img{
+        width: var(--content-width);
+        height: auto;
+    }
+}
