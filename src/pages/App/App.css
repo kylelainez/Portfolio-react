@@ -59,3 +59,9 @@ h1{
         --content-width: 300px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    :root{
+        --content-width: 250px;
+    }
+}
