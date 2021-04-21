@@ -21,3 +21,9 @@
     list-style-type: none;
     line-height: 1.5rem;
 }
+
+.skills ul li::before{
+    content: '\27A3';
+    padding-right: 5px;
+    color: var(--color-2)
+}
