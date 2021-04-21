@@ -54,7 +54,7 @@ nav li:hover{
     width: 50px;
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 5vw;
 }
 
 .burger{
@@ -98,6 +98,10 @@ nav li:hover{
         transition: 300ms;
         justify-content: center;
         align-items: center;
+    }
+
+    nav {
+        padding: 0 5vw;
     }
 
     nav ul.active{
