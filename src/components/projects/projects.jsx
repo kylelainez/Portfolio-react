@@ -211,6 +211,10 @@ function Projects(){
         Aos.init({duration: 2000});
     }, []);
 
+    function openImage(){
+        window.open(projectInfo[selected].image, '_blank')
+    }
+
     return <div className="projects" id="projects">
 
         <Modal
@@ -222,10 +226,11 @@ function Projects(){
             <div className="modalChild">
                 <button onClick={closeModal}>X</button>
                 <h1>{projectInfo[selected].title}</h1>
-                <img src={projectInfo[selected].image}/>
+                <img src={projectInfo[selected].image} onClick={openImage} />
                 <p>{projectInfo[selected].description}</p>
                 <p>
-                    Technologies: {projectInfo[selected].technologies.map(
+                    Technologies: &nbsp;
+                     {projectInfo[selected].technologies.map(
                         (el, i) => 
                         <span key={i}>&nbsp;{el}{i === projectInfo[selected].technologies.length -1 ? '' : ','}</span>
                     )}
