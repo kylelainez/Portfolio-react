@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
     --color-1: #0a192f;
     --color-2: #64ffda;
     --color-3: rgb(245,245,245);
     --content-width: 1000px;
     font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     transition: 300ms;
 }
@@ -50,7 +52,7 @@ h1{
 
 @media screen and (max-width: 576px) {
     :root{
-        --content-width: 400px;
+        --content-width: 380px;
     }
 }
 

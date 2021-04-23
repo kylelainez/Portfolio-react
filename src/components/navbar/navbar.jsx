@@ -22,7 +22,7 @@ function navbar(){
         <header>
             <nav>
                 <div className="icon">
-                    KL
+                    <a href="/">KA</a>
                 </div>
                 <ul className="links">
                     <li onClick={() => scroll('#about')}>About</li>
