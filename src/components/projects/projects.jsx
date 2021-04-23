@@ -226,7 +226,7 @@ function Projects(){
             <div className="modalChild">
                 <button onClick={closeModal}>X</button>
                 <h1>{projectInfo[selected].title}</h1>
-                <img src={projectInfo[selected].image} onClick={openImage} />
+                <img src={projectInfo[selected].image} onClick={openImage} alt='Project Screenshot'/>
                 <p>{projectInfo[selected].description}</p>
                 <p>
                     Technologies: &nbsp;
