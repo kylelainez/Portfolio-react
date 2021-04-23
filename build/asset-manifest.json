@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a5ebd0b6.chunk.css",
+    "main.js": "/static/js/main.993230ac.chunk.js",
+    "main.js.map": "/static/js/main.993230ac.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bfea658e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bfea658e.js.map",
+    "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
+    "static/js/2.918459ee.chunk.js": "/static/js/2.918459ee.chunk.js",
+    "static/js/2.918459ee.chunk.js.map": "/static/js/2.918459ee.chunk.js.map",
+    "static/js/3.de0083ce.chunk.js": "/static/js/3.de0083ce.chunk.js",
+    "static/js/3.de0083ce.chunk.js.map": "/static/js/3.de0083ce.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ec02d681.chunk.css.map": "/static/css/2.ec02d681.chunk.css.map",
+    "static/css/main.a5ebd0b6.chunk.css.map": "/static/css/main.a5ebd0b6.chunk.css.map",
+    "static/js/2.918459ee.chunk.js.LICENSE.txt": "/static/js/2.918459ee.chunk.js.LICENSE.txt",
+    "static/media/BuyAndSale.75752568.png": "/static/media/BuyAndSale.75752568.png",
+    "static/media/Chess.2dc3c685.png": "/static/media/Chess.2dc3c685.png",
+    "static/media/Convey.efa13875.png": "/static/media/Convey.efa13875.png",
+    "static/media/GoalTracker.10c983c6.png": "/static/media/GoalTracker.10c983c6.png",
+    "static/media/Kyle Lainez - Resume.60b89e1f.pdf": "/static/media/Kyle Lainez - Resume.60b89e1f.pdf",
+    "static/media/kyle.2f49b0a8.JPG": "/static/media/kyle.2f49b0a8.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfea658e.js",
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.918459ee.chunk.js",
+    "static/css/main.a5ebd0b6.chunk.css",
+    "static/js/main.993230ac.chunk.js"
+  ]
+}
